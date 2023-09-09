@@ -29,7 +29,7 @@
       var map = L.map('map', { attributionControl: false } ).setView([-33.05720288550005, 151.58209550250024], 12.5);
       L.control.attribution( { prefix: false } ).addTo( map );
       
-      var tilesource_layer = L.tileLayer('file:///C%3A/GIS_Data/Dashboard/Lake%20Macquarie_2001/{z}/{x}/{y}.png', {
+      var tilesource_layer = L.tileLayer('file:{z}/{x}/{y}.png', {
         minZoom: 8,
         maxZoom: 17,
         tms: false,
